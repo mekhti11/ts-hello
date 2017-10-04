@@ -1,2 +1,2 @@
 # ts-hello
-Learning TypeScript
+Learning TypeScript ...
