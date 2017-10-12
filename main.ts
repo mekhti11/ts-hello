@@ -17,6 +17,7 @@ class Man{
   isim : string;
   yas : number;
 
+  //constructor(isim?:string , yas?:number)
   constructor(isim:string , yas:number){
     this.isim = isim;
     this.yas = yas;
