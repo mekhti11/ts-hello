@@ -1,17 +1,9 @@
+"use strict";
+exports.__esModule = true;
+var human_1 = require("./human");
 var people = [];
-var babek = { name: 'Babek', height: 170, age: 28 };
-people.push(babek);
-people.push({
-    name: 'Mekhti',
-    height: 172,
-    age: 21
-});
-var compare = function (a, b) {
-    if (a.height < b.height)
-        return 1;
-    else if (a.height > b.height)
-        return -1;
-    return 0;
-};
-var insanlar = people.sort(compare);
-console.log(insanlar);
+var babek = new human_1.Human('Babek', 28, 170);
+var mekhti = new human_1.Human('Mekhti', 21, 173);
+people.push(babek, mekhti);
+var people = people.sort(human_1.compare);
+console.log(people); // arrow function'lari da yazdiriyor ekrana
